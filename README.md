@@ -77,15 +77,19 @@ A modular agent system that integrates multiple services (web search, weather, a
 
 ```
 .
-├── MCPSERVERLangchain/
-│   ├── client.py          # Main client application
-│   ├── websearch_server.py # Web search service
-│   ├── weather.py         # Weather service
-│   ├── papers_server.py   # Research papers service
-│   ├── mathserver.py      # Example math service
-│   └── .env.example      # Example environment variables
-├── README.md             # This file
-└── requirements.txt      # Project dependencies
+├── .env                    # Environment variables (not versioned)
+├── .gitignore              # Git ignore rules
+├── README.md               # Project documentation
+├── client.py               # Main client application
+├── papers_server.py        # Research papers service
+├── pyproject.toml          # Python project configuration
+├── requirements.txt        # Project dependencies
+├── uv.lock                # UV package manager lock file
+├── weather.py             # Weather service
+└── websearch_server.py    # Web search service
+
+# Virtual Environment (not versioned)
+.venv/                    # Python virtual environment
 ```
 
 ## 🤖 Available Tools
